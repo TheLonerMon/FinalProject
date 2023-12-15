@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/modnorm.min.css">
   <script src="script.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet"
@@ -19,15 +21,15 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700">
 </head>
 
+
 <body>
   <header class="header">
     <font size="-1">The</font>
-    <font size="+4">Den</font>
+    <font size="+4">DeN</font>
   </header>
 
   <div class="flex-layout">
-    <!-- <div class="grid-layout"> -->
-    <div class="card">
+    <div class="card"><!--reps-->
       <a href="#">
         <div class="image-rep">
           <div class="image-title">
@@ -36,20 +38,23 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>Reptiles are cold-blooded vertebrates. (Vertebrates have backbones.)
+          They have dry skin covered with scales or bony plates and usually lay soft-shelled eggs.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonRep">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://www.nationalgeographic.com/animals/reptiles" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--mams-->
       <a href="#">
         <div class="image-mam">
           <div class="image-title">
@@ -58,20 +63,23 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>Mammals include humans and all other animals that are warm-blooded vertebrates (vertebrates have backbones)
+          with hair. They feed their young with milk and have a more well-developed brain than other types of animals.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonMam">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://kids.nationalgeographic.com/animals/mammals" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--birds-->
       <a href="#">
         <div class="image-bird">
           <div class="image-title">
@@ -80,20 +88,23 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>Birds are warm-blooded vertebrates (vertebrates have backbones) and are the only animals with feathers.
+          Although all birds have wings, a few species can't fly.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonBir">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://kids.nationalgeographic.com/animals/birds" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--amph-->
       <a href="#">
         <div class="image-amph">
           <div class="image-title">
@@ -102,20 +113,23 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>Amphibians are cold-blooded vertebrates (vertebrates have backbones) that don't have scales.
+          They live part of their lives in water and part on land.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonAmp">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://kids.nationalgeographic.com/animals/amphibians" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--fish-->
       <a href="#">
         <div class="image-fish">
           <div class="image-title">
@@ -124,20 +138,23 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>Fish are vertebrates (vertebrates have backbones) that live in water. They breathe using special organs
+          called gills.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonFis">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://kids.nationalgeographic.com/animals/fish" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--ins-->
       <a href="#">
         <div class="image-ins">
           <div class="image-title">
@@ -146,20 +163,24 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>Insects are invertebrates (invertebrates have no backbones) which have have bodies with three segments that
+          are protected by a hard shell.
+          They have three pairs of legs and a pair of antennae. Most insects have two pairs of wings, too.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonIns">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://www.britannica.com/animal/insect" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--arac-->
       <a href="#">
         <div class="image-arac">
           <div class="image-title">
@@ -168,20 +189,24 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>any of a class of arthropods including the spiders, scorpions, mites,
+          and ticks and having a segmented body divided into two regions of which the front part bears four pairs of
+          legs but no antennae.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonAra">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://www.britannica.com/animal/arachnid" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--moll-->
       <a href="#">
         <div class="image-moll">
           <div class="image-title">
@@ -190,20 +215,23 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>Invertebrate animals with a soft body. Most mollusks have a hard shell that protects the body. Octopuses,
+          oysters, snails, and squid are just a few examples.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonMol">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://www.britannica.com/animal/mollusk" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--cnida-->
       <a href="#">
         <div class="image-cnida">
           <div class="image-title">
@@ -212,20 +240,23 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p> Cnidarians (pronounced “nih DARE ee uhns”) includes soft-bodied stinging animals such as corals, sea
+          anemones, and jellyfish which are found in many aquatic environments.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonCni">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://www.britannica.com/animal/cnidarian" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <div class="card">
+    <div class="card"><!--crust-->
       <a href="#">
         <div class="image-crust">
           <div class="image-title">
@@ -234,24 +265,87 @@
         </div>
       </a>
       <div class="description">
-        <p>A vertebrate animal of a class that includes snakes, lizards, crocodiles, turtles, and tortoises.
-          They are distinguished by having a dry scaly skin and typically laying soft-shelled eggs on land.
+        <p>A crustacean is an animal with a hard shell and several pairs of legs, which usually lives in water.
+          Crabs, lobsters, and shrimps are crustaceans.
         </p>
       </div>
       <div class="icons">
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        <span class="material-symbols-outlined">
-          expand_content
-        </span>
+        <button class="material-symbols-outlined" id="playButtonCru">
+          <div class="youtube-link">
+            <span>play_arrow</span>
+          </div>
+        </button>
+        <a href="https://www.britannica.com/animal/crustacean" class="material-symbols-outlined"
+          id="expandButton" style="color: inherit; text-decoration: none;" target="_blank">
+          <span>expand_content</span>
+        </a>
       </div>
     </div>
-    <!-- </div> -->
   </div>
+  <!-- ----------------------------------------------------------------------------------- -->
+  <div class="overlayRep" id="overlayRep">
+    <iframe  title="All About Reptiles" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="close-button" id="close-button-rep">&times;</div>
+  </div>
+  <div class="overlayMam" id="overlayMam">
+    <iframe title="All About Mammals" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-mam">&times;</div>
+  </div>
+  <div class="overlayBir" id="overlayBir">
+    <iframe title="All About Birds" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-bir">&times;</div>
+  </div>
+  <div class="overlayAmp" id="overlayAmp">
+    <iframe title="All About Amphibians" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-amp">&times;</div>
+  </div>
+  <div class="overlayFis" id="overlayFis">
+    <iframe title="All About Fish" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-fis">&times;</div>
+  </div>
+  <div class="overlayIns" id="overlayIns">
+    <iframe title="All You Need to Know About Insects" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-ins">&times;</div>
+  </div>
+  <div class="overlayAra" id="overlayAra">
+    <iframe title="Rick Astley - Never Gonna Give You Up (Official Music Video)" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-ara">&times;</div>
+  </div>
+  <div class="overlayMol" id="overlayMol">
+    <iframe title="All About Mollusks" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-mol">&times;</div>
+  </div>
+  <div class="overlayCni" id="overlayCni">
+    <iframe title="All About Cnidarians" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-cni">&times;</div>
+  </div>
+  <div class="overlayCru" id="overlayCru">
+    <iframe title="Facts: Crustaceans" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+    <div class="close-button" id="close-button-cru">&times;</div>
+  </div>
+  <!-- -------------------------------------------------------- -->
   <footer class="footer">
-    <p>&copy; The Den </p>
+    <p>&copy; The Den</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
